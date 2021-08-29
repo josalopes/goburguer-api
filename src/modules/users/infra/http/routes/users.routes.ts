@@ -14,11 +14,6 @@ const userAvatarController = new UserAvatarController();
 
 const upload = multer(uploadConfig.multer);
 
-/* usersRouter.get('/', async (request, response) => {
-  const users = await usersRepository.find();
-  return response.json(users);
-}); */
-
 usersRouter.post(
   '/',
   celebrate({

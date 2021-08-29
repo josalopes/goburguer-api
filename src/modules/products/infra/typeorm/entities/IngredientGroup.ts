@@ -1,4 +1,10 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity('ingredient_group')
 class IngredientGroup {
@@ -6,12 +12,12 @@ class IngredientGroup {
   id: string;
 
   @Column()
-  descricao: string;
+  description: string;
 
-  @Column('timestamp with time zone')
+  @CreateDateColumn()
   created_at: Date;
 
-  @Column('timestamp with time zone')
+  @UpdateDateColumn()
   update_at: Date;
 }
 
