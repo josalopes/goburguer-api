@@ -20,21 +20,18 @@ class Ingredient {
   name: string;
 
   @Column()
-  precoCompra: number;
+  purchasePrice: number;
 
   @Column()
-  precoUnitario: number;
+  unitPrice: number;
 
   @ManyToOne(() => IngredientGroup)
   @JoinColumn({ name: 'ingredient_group_id' })
   ingredientGroup: IngredientGroup;
 
-  @Column()
-  user_id: string;
-
   @ManyToOne(() => Unit)
   @JoinColumn({ name: 'unit_id' })
-  unidade: Unit;
+  unit: Unit;
 
   @CreateDateColumn()
   created_at: Date;

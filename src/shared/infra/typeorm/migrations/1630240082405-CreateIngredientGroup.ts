@@ -18,6 +18,7 @@ export default class CreateIngredientGroup1630240082405
             name: 'description',
             type: 'varchar',
             isUnique: true,
+            isNullable: false,
           },
           {
             name: 'created_at',

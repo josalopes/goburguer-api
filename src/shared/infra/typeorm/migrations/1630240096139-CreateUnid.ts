@@ -17,11 +17,13 @@ export default class CreateUnid1630240096139 implements MigrationInterface {
             name: 'name',
             type: 'varchar',
             isUnique: true,
+            isNullable: false,
           },
           {
             name: 'abreviation',
             type: 'varchar',
             isUnique: true,
+            isNullable: false,
           },
           {
             name: 'created_at',

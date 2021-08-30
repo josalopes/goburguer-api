@@ -34,6 +34,14 @@ export default class CreateIngredient1630239322954
             type: 'varchar',
           },
           {
+            name: 'purchase_price',
+            type: 'number',
+          },
+          {
+            name: 'unit_price',
+            type: 'number',
+          },
+          {
             name: 'created_at',
             type: 'timestamp',
             default: 'now()',
